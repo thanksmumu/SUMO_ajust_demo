@@ -1,4 +1,4 @@
-# Vehicle Brightness Control in SUMO
+# [ONLY_STUDY&SHARE]Vehicle Brightness Control in SUMO
 
 ## 项目概述
 本项目基于 [SUMO](https://www.eclipse.org/sumo/) 仿真平台，通过 **TraCI 接口** 实时控制车辆自定义参数 `brightness`（亮度），并根据车辆之间的头距自动调整亮度。项目同时提供 CSV 记录与可视化曲线，用于分析车辆亮度随时间变化情况。
@@ -55,5 +55,6 @@ python plot_brightness.py
 车辆亮度_AC.png
 
 车辆亮度_BD.png
+
 
 图片中显示车辆亮度随仿真时间变化，中文标注
