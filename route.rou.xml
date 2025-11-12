@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <vType id="car" accel="2.0" decel="4.5" sigma="0.5" length="5.0" minGap="2.5" maxSpeed="13.9" color="1,0,0"/>
+
+    <!-- 东向西 -->
+    <vehicle id="A" type="car" depart="0" departLane="0" departSpeed="10">
+        <route edges="E3D3 D3C3"/>
+        <param key="brightness" value="400"/>
+    </vehicle>
+
+    <!-- 西向东 -->
+    <vehicle id="B" type="car" depart="5" departLane="0" departSpeed="10">
+        <route edges="C3D3 D3E3"/>
+        <param key="brightness" value="400"/>
+    </vehicle>
+
+    <!-- 北向南 -->
+    <vehicle id="D" type="car" depart="25" departLane="0" departSpeed="10">
+        <route edges="D4D3 D3D2"/>
+        <param key="brightness" value="400"/>
+    </vehicle>
+    
+    <!-- 南向北 -->
+    <vehicle id="C" type="car" depart="30" departLane="0" departSpeed="10">
+        <route edges="D2D3 D3D4"/>
+        <param key="brightness" value="400"/>
+    </vehicle>
+
+
+</routes>

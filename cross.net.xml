@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-11-11 22:40:48 by Eclipse SUMO netedit Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\86182\Desktop\暂\仿真\cross.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\86182\Desktop\暂\仿真\cross.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="200.00,200.00,400.00,400.00" origBoundary="0.00,0.00,400.00,400.00" projParameter="!"/>
+
+    <edge id=":D3_0" function="internal">
+        <lane id=":D3_0_0" index="0" speed="13.90" length="14.40" shape="298.40,307.20 298.40,292.80"/>
+    </edge>
+    <edge id=":D3_1" function="internal">
+        <lane id=":D3_1_0" index="0" speed="13.90" length="14.40" shape="307.20,301.60 292.80,301.60"/>
+    </edge>
+    <edge id=":D3_2" function="internal">
+        <lane id=":D3_2_0" index="0" speed="13.90" length="14.40" shape="301.60,292.80 301.60,307.20"/>
+    </edge>
+    <edge id=":D3_3" function="internal">
+        <lane id=":D3_3_0" index="0" speed="13.90" length="14.40" shape="292.80,298.40 307.20,298.40"/>
+    </edge>
+
+    <edge id="C3D3" from="C3" to="D3" priority="-1" length="250.00">
+        <lane id="C3D3_0" index="0" speed="13.90" length="250.00" shape="200.00,298.40 292.80,298.40"/>
+    </edge>
+    <edge id="D2D3" from="D2" to="D3" priority="-1" length="250.00">
+        <lane id="D2D3_0" index="0" speed="13.90" length="250.00" shape="301.60,200.00 301.60,292.80"/>
+    </edge>
+    <edge id="D3C3" from="D3" to="C3" priority="-1" length="250.00">
+        <lane id="D3C3_0" index="0" speed="13.90" length="250.00" shape="292.80,301.60 200.00,301.60"/>
+    </edge>
+    <edge id="D3D2" from="D3" to="D2" priority="-1" length="250.00">
+        <lane id="D3D2_0" index="0" speed="13.90" length="250.00" shape="298.40,292.80 298.40,200.00"/>
+    </edge>
+    <edge id="D3D4" from="D3" to="D4" priority="-1" length="250.00">
+        <lane id="D3D4_0" index="0" speed="13.90" length="250.00" shape="301.60,307.20 301.60,400.00"/>
+    </edge>
+    <edge id="D3E3" from="D3" to="E3" priority="-1" length="250.00">
+        <lane id="D3E3_0" index="0" speed="13.90" length="250.00" shape="307.20,298.40 400.00,298.40"/>
+    </edge>
+    <edge id="D4D3" from="D4" to="D3" priority="-1" length="250.00">
+        <lane id="D4D3_0" index="0" speed="13.90" length="250.00" shape="298.40,400.00 298.40,307.20"/>
+    </edge>
+    <edge id="E3D3" from="E3" to="D3" priority="-1" length="250.00">
+        <lane id="E3D3_0" index="0" speed="13.90" length="250.00" shape="400.00,301.60 307.20,301.60"/>
+    </edge>
+
+    <junction id="C3" type="dead_end" x="200.00" y="300.00" incLanes="D3C3_0" intLanes="" shape="200.00,300.00 200.00,303.20 200.00,300.00"/>
+    <junction id="D2" type="dead_end" x="300.00" y="200.00" incLanes="D3D2_0" intLanes="" shape="300.00,200.00 296.80,200.00 300.00,200.00"/>
+    <junction id="D3" type="priority" x="300.00" y="300.00" incLanes="D4D3_0 E3D3_0 D2D3_0 C3D3_0" intLanes=":D3_0_0 :D3_1_0 :D3_2_0 :D3_3_0" shape="296.80,307.20 303.20,307.20 303.64,304.98 304.20,304.20 304.98,303.64 305.98,303.31 307.20,303.20 307.20,296.80 304.98,296.36 304.20,295.80 303.64,295.02 303.31,294.02 303.20,292.80 296.80,292.80 296.36,295.02 295.80,295.80 295.02,296.36 294.02,296.69 292.80,296.80 292.80,303.20 295.02,303.64 295.80,304.20 296.36,304.98 296.69,305.98">
+        <request index="0" response="0000" foes="1010" cont="0"/>
+        <request index="1" response="0101" foes="0101" cont="0"/>
+        <request index="2" response="0000" foes="1010" cont="0"/>
+        <request index="3" response="0101" foes="0101" cont="0"/>
+    </junction>
+    <junction id="D4" type="dead_end" x="300.00" y="400.00" incLanes="D3D4_0" intLanes="" shape="300.00,400.00 303.20,400.00 300.00,400.00"/>
+    <junction id="E3" type="dead_end" x="400.00" y="300.00" incLanes="D3E3_0" intLanes="" shape="400.00,300.00 400.00,296.80 400.00,300.00"/>
+
+    <connection from="C3D3" to="D3E3" fromLane="0" toLane="0" via=":D3_3_0" dir="s" state="m"/>
+    <connection from="D2D3" to="D3D4" fromLane="0" toLane="0" via=":D3_2_0" dir="s" state="M"/>
+    <connection from="D4D3" to="D3D2" fromLane="0" toLane="0" via=":D3_0_0" dir="s" state="M"/>
+    <connection from="E3D3" to="D3C3" fromLane="0" toLane="0" via=":D3_1_0" dir="s" state="m"/>
+
+    <connection from=":D3_0" to="D3D2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":D3_1" to="D3C3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":D3_2" to="D3D4" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":D3_3" to="D3E3" fromLane="0" toLane="0" dir="s" state="M"/>
+
+</net>
